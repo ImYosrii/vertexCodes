@@ -3,6 +3,7 @@ import { OrbitControls } from "@react-three/drei"
 
 import Experience from "./Experience"
 import Navbar from "./components/navbar/Navbar"
+import Home from "./components/home/Home"
 
 export default function App() {
   const cameraSettings = {
@@ -15,10 +16,13 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <Home />
       <Canvas
       camera={cameraSettings}
       > 
-      <OrbitControls />
+        <OrbitControls />
+        <ambientLight intensity={0.4} />
+        <directionalLight position={[0, 3, 5]} intensity={2} />
 
         <Experience />
       </Canvas>

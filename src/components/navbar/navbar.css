@@ -1,0 +1,29 @@
+.navbar{
+    position: fixed;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 7px;
+    box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.53);
+    z-index: 10;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color:rgb(32, 32, 32);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+    color: #029CC3;
+    transition: all 0.3s ease-in-out;
+}

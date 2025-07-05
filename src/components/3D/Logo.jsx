@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
 
 export default function Logo() {
-  const { nodes, materials } = useGLTF('/logo3.glb')
+  const { nodes, materials } = useGLTF('/logo.glb')
   const blue = useRef()
 
   useFrame((_, delta)=>{
